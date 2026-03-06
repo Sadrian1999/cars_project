@@ -1,0 +1,1 @@
+{"rmse_log":0.5661651355,"mae_log":0.2896020651,"mae_dollar":4031.7380171799,"n_rows":327307,"features":{"categorical":["manufacturer","base_model","condition","fuel","transmission","drive","type","title_status"],"numeric":["age","log_odometer"]}}
