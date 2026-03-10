@@ -2,3 +2,4 @@ venv/
 *.csv
 __pycache__/
 *.pyc
+data/raw/vehicles.csv
