@@ -3,3 +3,5 @@ venv/
 __pycache__/
 *.pyc
 data/raw/vehicles.csv
+pyrightconfig.json
+
