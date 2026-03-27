@@ -1,8 +1,13 @@
 import shutil
+from pathlib import Path
 
 import kagglehub
 
-# Download latest version
-path = kagglehub.dataset_download("austinreese/craigslist-carstrucks-data")
+path = Path(kagglehub.dataset_download("austinreese/craigslist-carstrucks-data"))
 
-shutil.move(path, "./data/raw/")
+csv_file = path / "vehicles.csv"
+
+dst = Path("./data/raw/vehicles.csv")
+dst.parent.mkdir(parents=True, exist_ok=True)
+
+shutil.move(csv_file, dst)
